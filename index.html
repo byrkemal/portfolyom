@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemal Bayır - Portfolyo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <nav class="navbar">
+        <div class="logo">Portfolyo.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Merhaba, Ben <span>Kemal Bayır</span></h1>
+            <p>Yazılım Geliştirici & Teknoloji Tutkunu</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">Projelerimi Gör</a>
+                <a href="cv.pdf" download class="btn secondary">CV İndir <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>Hakkımda</h2>
+        <div class="about-container">
+            <img src="images/profil.jpeg" alt="Profil Resmi" class="profile-img">
+            <div class="about-text">
+                <p>Buraya kendini tanıtan kısa bir yazı yaz. Örneğin: Bilgisayar mühendisliği öğrencisiyim. Web teknolojileri ve yapay zeka ile ilgileniyorum. Öğrenmeye ve üretmeye tutkulu biriyim.</p>
+                
+                <h3>Yetenekler</h3>
+                <div class="skills">
+                    <span>HTML/CSS</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projelerim</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <img src="images/sinavv.png" alt="Güvenlik Sınavı Sistemi" class="card-img">
+                <div class="card-info">
+                    <h3>🔒 Güvenlik Sınavı Sistemi</h3>
+                    <p>Güvenlik personeli ve ilgili çalışanlar için tasarlanmış görsel tabanlı bir sınav sistemidir. Kullanıcılar, bagaj ve eşya görsellerini inceleyerek tehdit unsurlarını tanımlamaya yönelik sorulara cevap verirler.</p>
+                    <a href="https://github.com/byrkemal/Guvenlik-sinavi-sistemi?tab=readme-ov-file" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/speechcoach.jpg" alt="Speech Coach" class="card-img">
+                <div class="card-info">
+                    <h3>🎤 Türkçe Telaffuz Eğitimi Mobil Uygulaması</h3>
+                    <p>Türkçe telaffuz becerilerini geliştirmek amacıyla geliştirilen bir mobil uygulamadır. Uygulama, doğal dil işleme (NLP) teknolojileri ve gerçek zamanlı ses analizi ile kullanıcıların konuşma hatalarını tespit ederek görsel geri bildirim sunar.</p>
+                    <a href="https://github.com/byrkemal/SpeechCoach" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/tarifvakti.jpg" alt="Tarif Vakti" class="card-img">
+                <div class="card-info">
+                    <h3>🍽 Tarif Vakti - Yemek Tarifleri Platformu</h3>
+                    <p>Tarif Vakti, kullanıcıların yemek tariflerine bakabildiği, blog yazılarını okuyabildiği, galeri görüntüleyebildiği ve yönetim paneli aracılığıyla içerik yönetimi yapabildiği ASP.NET Web Forms tabanlı bir web uygulamasıdır.</p>
+                    <a href="https://github.com/byrkemal/TarifVakti" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/biletal.png" alt="BİLETALL" class="card-img">
+                <div class="card-info">
+                    <h3>🚌 BİLETALL - Otobüs Bileti Satış Sistemi</h3>
+                    <p>BİLETALL, C# Windows Forms kullanılarak geliştirilmiş kapsamlı bir otobüs bileti satış ve yönetim sistemidir. Bu uygulama, müşterilerin otobüs bileti arama, satın alma ve yönetim işlemlerini kolayca gerçekleştirmelerini sağlar.</p>
+                    <a href="https://github.com/byrkemal/OtobusBiletSatisOtomasyonu" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/motoincele.jpg" alt="Moto İncele" class="card-img">
+                <div class="card-info">
+                    <h3>🏍️ Moto İncele - Motosiklet İnceleme Platformu</h3>
+                    <p>Moto İncele, motosiklet tutkunları için geliştirilmiş kapsamlı bir web platformudur. Site, en yeni motosiklet modellerinin detaylı incelemelerini, teknik özelliklerini ve kullanıcı deneyimlerini sunar.</p>
+                    <a href="https://github.com/byrkemal/OtobusBiletSatisOtomasyonu" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>İletişime Geç</h2>
+        <p>Projeleriniz veya sorularınız için bana ulaşabilirsiniz.</p>
+        <div class="social-links">
+            <a href="mailto:bayirkemal61@gmail.com"><i class="fas fa-envelope"></i> E-posta Gönder</a>
+            <a href="https://www.linkedin.com/in/kemalbayır/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/byrkemal"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <p class="copyright">© 2025 Kemal Bayır. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
