@@ -11,39 +11,62 @@
     <div class="bg-animation"></div>
 
     <nav class="navbar">
-        <div class="logo"></div>
-        <ul class="nav-links">
-            <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#about">Hakkımda</a></li>
-            <li><a href="#projects">Projeler</a></li>
-            <li><a href="#projects">Medium</a></li>
-            <li><a href="#contact">İletişim</a></li>
+        <div class="lang-wrapper">
+            <button id="lang-btn" class="lang-btn">
+                <i class="fas fa-globe"></i>
+                <span class="current-lang">TR</span>
+            </button>
+        </div>
+
+        <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" data-lang="nav_home">Ana Sayfa</a></li>
+            <li><a href="#about" data-lang="nav_about">Hakkımda</a></li>
+            
+            <li class="dropdown">
+                <a href="#projects" class="dropbtn">
+                    <span data-lang="nav_projects_main">Projeler</span> 
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="#projects" data-lang="nav_all_projects">Tüm Projeler</a></li>
+                    <li><a href="#supported" data-lang="nav_supported">Başarılar</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#medium" data-lang="nav_medium">Medium</a></li>
+            <li><a href="#contact" data-lang="nav_contact">İletişim</a></li>
         </ul>
     </nav>
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1><span>Kemal Bayır</span></h1>
-            <p>Yazılım Geliştirici & Teknoloji Tutkunu</p>
+            <h1><span data-lang="hero_greeting"></span> <span>Kemal Bayır</span></h1>
+            <p data-lang="hero_title">Yazılım Geliştirici & Teknoloji Tutkunu</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn primary">Projelerimi Gör</a>
-                <a href="cv.pdf" download class="btn secondary">CV İndir <i class="fas fa-download"></i></a>
+                <a href="#projects" class="btn primary" data-lang="btn_projects">Projelerimi Gör</a>
+                <a href="cv.pdf" download class="btn secondary"><span data-lang="btn_cv">CV İndir</span> <i class="fas fa-download"></i></a>
             </div>
         </div>
     </header>
 
     <section id="about" class="section">
-        <h2>Hakkımda</h2>
+        <h2 data-lang="nav_about">Hakkımda</h2>
         <div class="about-container">
             <img src="images/profil.jpeg" alt="Profil Resmi" class="profile-img">
             <div class="about-text">
-                <p>Buraya kendini tanıtan kısa bir yazı yaz. Örneğin: Bilgisayar mühendisliği öğrencisiyim. Web teknolojileri ve yapay zeka ile ilgileniyorum. Öğrenmeye ve üretmeye tutkulu biriyim.</p>
+                <p data-lang="about_desc">Bilgisayar mühendisliği son sınıf öğrencisiyim. Web teknolojileri, mobil uygulama geliştirme ve yapay zeka konularında kendimi geliştiriyorum. Öğrenmeye ve teknoloji ile sorunlara çözüm üretmeye tutkulu biriyim.</p>
                 
-                <h3>Yetenekler</h3>
+                <h3 data-lang="skills_title">Yetenekler</h3>
                 <div class="skills">
                     <span>HTML/CSS</span>
                     <span>Python</span>
                     <span>JavaScript</span>
+                    <span>Flutter</span>
+                    <span>Django</span>
                     <span>Git</span>
                 </div>
             </div>
@@ -51,51 +74,101 @@
     </section>
 
     <section id="projects" class="section">
-        <h2>Projelerim</h2>
+        <h2 data-lang="nav_projects_main">Projeler</h2>
         <div class="projects-grid">
             
             <div class="project-card">
-                <img src="images/sinavv.png" alt="Güvenlik Sınavı Sistemi" class="card-img">
+                <img src="images/sinavv.jpg" alt="Güvenlik Sınavı Sistemi" class="card-img">
                 <div class="card-info">
-                    <h3>🔒 Güvenlik Sınavı Sistemi</h3>
-                    <p>Güvenlik personeli ve ilgili çalışanlar için tasarlanmış görsel tabanlı bir sınav sistemidir. Kullanıcılar, bagaj ve eşya görsellerini inceleyerek tehdit unsurlarını tanımlamaya yönelik sorulara cevap verirler.</p>
-                    <a href="https://github.com/byrkemal/Guvenlik-sinavi-sistemi?tab=readme-ov-file" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/speechcoach.jpg" alt="Speech Coach" class="card-img">
-                <div class="card-info">
-                    <h3>🎤 Türkçe Telaffuz Eğitimi Mobil Uygulaması</h3>
-                    <p>Türkçe telaffuz becerilerini geliştirmek amacıyla geliştirilen bir mobil uygulamadır. Uygulama, doğal dil işleme (NLP) teknolojileri ve gerçek zamanlı ses analizi ile kullanıcıların konuşma hatalarını tespit ederek görsel geri bildirim sunar.</p>
-                    <a href="https://github.com/byrkemal/SpeechCoach" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                    <h3 data-lang="proj1_title">🔒 Güvenlik Sınavı Sistemi</h3>
+                    <p data-lang="proj1_desc">Güvenlik personeli için tasarlanmış görsel tabanlı bir sınav sistemidir. Kullanıcılar, bagaj ve eşya görsellerini inceleyerek tehdit unsurlarını tanımlar.</p>
+                    <a href="https://github.com/byrkemal/Guvenlik-sinavi-sistemi?tab=readme-ov-file" class="project-link"><span data-lang="view_github">GitHub'da İncele</span> <i class="fab fa-github"></i></a>
                 </div>
             </div>
 
             <div class="project-card">
                 <img src="images/tarifvakti.jpg" alt="Tarif Vakti" class="card-img">
                 <div class="card-info">
-                    <h3>🍽 Tarif Vakti - Yemek Tarifleri Platformu</h3>
-                    <p>Tarif Vakti, kullanıcıların yemek tariflerine bakabildiği, blog yazılarını okuyabildiği, galeri görüntüleyebildiği ve yönetim paneli aracılığıyla içerik yönetimi yapabildiği ASP.NET Web Forms tabanlı bir web uygulamasıdır.</p>
-                    <a href="https://github.com/byrkemal/TarifVakti" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                    <h3 data-lang="proj3_title">🍽 Tarif Vakti - Yemek Tarifleri</h3>
+                    <p data-lang="proj3_desc">Kullanıcıların yemek tariflerine bakabildiği, blog yazılarını okuyabildiği ASP.NET Web Forms tabanlı bir web uygulamasıdır.</p>
+                    <a href="https://github.com/byrkemal/TarifVakti" class="project-link"><span data-lang="view_github">GitHub'da İncele</span> <i class="fab fa-github"></i></a>
                 </div>
             </div>
 
             <div class="project-card">
                 <img src="images/biletal.png" alt="BİLETALL" class="card-img">
                 <div class="card-info">
-                    <h3>🚌 BİLETALL - Otobüs Bileti Satış Sistemi</h3>
-                    <p>BİLETALL, C# Windows Forms kullanılarak geliştirilmiş kapsamlı bir otobüs bileti satış ve yönetim sistemidir. Bu uygulama, müşterilerin otobüs bileti arama, satın alma ve yönetim işlemlerini kolayca gerçekleştirmelerini sağlar.</p>
-                    <a href="https://github.com/byrkemal/OtobusBiletSatisOtomasyonu" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                    <h3 data-lang="proj4_title">🚌 BİLETALL - Otomasyon Sistemi</h3>
+                    <p data-lang="proj4_desc">C# Windows Forms ile geliştirilmiş otobüs bileti satış ve yönetim sistemidir. Müşteri yönetimi ve bilet satış işlemlerini kapsar.</p>
+                    <a href="https://github.com/byrkemal/OtobusBiletSatisOtomasyonu" class="project-link"><span data-lang="view_github">GitHub'da İncele</span> <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/speechcoach.png" alt="Speechcoach" class="card-img">
+                <div class="card-info">
+                    <h3 data-lang="proj5_title">🎤 Türkçe Telaffuz Eğitimi Uygulaması</h3>
+                    <p data-lang="proj5_desc">Türkçe telaffuz becerilerini geliştirmek amacıyla geliştirilen bir mobil uygulamadır. NLP teknolojileri ve ses analizi ile görsel geri bildirim sunar.</p>
+                    <a href="https://github.com/byrkemal/SpeechCoach" class="project-link"><span data-lang="view_github">GitHub'da İncele</span> <i class="fab fa-github"></i></a>
                 </div>
             </div>
 
             <div class="project-card">
                 <img src="images/motoincele.jpg" alt="Moto İncele" class="card-img">
                 <div class="card-info">
-                    <h3>🏍️ Moto İncele - Motosiklet İnceleme Platformu</h3>
-                    <p>Moto İncele, motosiklet tutkunları için geliştirilmiş kapsamlı bir web platformudur. Site, en yeni motosiklet modellerinin detaylı incelemelerini, teknik özelliklerini ve kullanıcı deneyimlerini sunar.</p>
-                    <a href="https://github.com/byrkemal/OtobusBiletSatisOtomasyonu" class="project-link">GitHub'da İncele <i class="fab fa-github"></i></a>
+                    <h3 data-lang="proj6_title">🏍️ Moto İncele - Web Platformu</h3>
+                    <p data-lang="proj6_desc">Motosiklet tutkunları için geliştirilmiş, model incelemeleri ve teknik özelliklerin yer aldığı web platformudur.</p>
+                    <a href="https://github.com/byrkemal/OtobusBiletSatisOtomasyonu" class="project-link"><span data-lang="view_github">GitHub'da İncele</span> <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="supported" class="section">
+        <h2 data-lang="title_supported">Desteklenen Projeler</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="badge"><i class="fas fa-award"></i> <span data-lang="badge_tubitak">TÜBİTAK Destekli</span></div>
+                <img src="images/tübitak.jpg" alt="Tek Durak Burs" class="card-img">
+                <div class="card-info">
+                    <h3 data-lang="supp_proj1_title">🎓 Tek Durak Burs – Akıllı Burs Eşleştirme</h3>
+                    <p data-lang="supp_proj1_desc">Öğrencilerin kriterlerine en uygun bursları kolayca bulmasını sağlayan akıllı eşleştirme sistemi. Mobil uygulama üzerinden burs ilanlarını filtreleyip yalnızca uygun adaylara gösterir.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="badge"><i class="fas fa-award"></i> <span data-lang="badge_udham">UDHAM Destekli</span></div>
+                <img src="images/depremlink.png" alt="Afet İletişim" class="card-img">
+                <div class="card-info">
+                     <h3 data-lang="supp_proj2_title">📡 Afet Sonrası İletişim ve Koordinasyon</h3>
+                    <p data-lang="supp_proj2_desc">Afet durumlarında iletişim altyapısı çöktüğünde dahi çalışabilen, mesh ağ teknolojisini kullanarak cihazlar arasında internet gerektirmeden iletişim sağlayan sistem.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="medium" class="section">
+        <h2 data-lang="title_medium">Medium Yazılarım</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <img src="images/kubernetes1.jpg" alt="Medium Yazı 1" class="card-img">
+                <div class="card-info">
+                    <h3 data-lang="blog1_title">Kubernetes ile Proje Geliştirme</h3>
+                    <p data-lang="blog1_desc">Kubernetes temellerine giriş: Yerel geliştirme ortamının kurulumu (Minikube, kubectl) ve Node.js uygulamasının Docker ile konteynerize edilmesi.</p>
+                    <a href="https://medium.com/@Kemalbayir/kubernetes-ile-proje-geliştirmenin-aşamaları-yeni-başlayanlar-i̇çin-rehber-5d1ca13c2de3" class="project-link"><span data-lang="btn_read">Yazıyı Oku</span> <i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/kubernetes2.jpg" alt="Medium Yazı 2" class="card-img">
+                <div class="card-info">
+                    <h3 data-lang="blog2_title">Kubernetes Yolculuğu: Node.js</h3>
+                    <p data-lang="blog2_desc">Dockerize edilmiş Node.js uygulamasının Kubernetes mimarisine entegrasyonu, Deployment ve Service yapılandırmaları ile yönetilmesi.</p>
+                    <a href="https://medium.com/@Kemalbayir/kubernetes-yolculuğu-node-js-uygulamanızı-konteynerlere-taşıma-09276932d3b8" class="project-link"><span data-lang="btn_read">Yazıyı Oku</span> <i class="fab fa-medium"></i></a>
                 </div>
             </div>
 
@@ -103,17 +176,182 @@
     </section>
 
     <footer id="contact">
-        <h2>İletişime Geç</h2>
-        <p>Projeleriniz veya sorularınız için bana ulaşabilirsiniz.</p>
+        <h2 data-lang="contact_title">İletişime Geç</h2>
+        <p data-lang="contact_desc">Projeleriniz veya sorularınız için bana ulaşabilirsiniz.</p>
         <div class="social-links">
-            <a href="mailto:bayirkemal61@gmail.com"><i class="fas fa-envelope"></i> E-posta Gönder</a>
+            <a href="mailto:bayirkemal61@gmail.com"><i class="fas fa-envelope"></i> <span data-lang="send_email">E-posta Gönder</span></a>
             <a href="https://www.linkedin.com/in/kemalbayır/"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://github.com/byrkemal"><i class="fab fa-github"></i> GitHub</a>
         </div>
-        <p class="copyright">© 2025 Kemal Bayır. Tüm hakları saklıdır.</p>
+        <p class="copyright">© 2025 Kemal Bayır. <span data-lang="rights">Tüm hakları saklıdır.</span></p>
     </footer>
+
+    <script>
+        /* --- ÇEVİRİ VERİLERİ --- */
+        const translations = {
+            tr: {
+                nav_home: "Ana Sayfa",
+                nav_about: "Hakkımda",
+                nav_projects_main: "Projeler",
+                nav_all_projects: "Tüm Projeler",
+                nav_supported: "Başarılar",
+                nav_medium: "Medium",
+                nav_contact: "İletişim",
+                
+                hero_title: "Yazılım Geliştirici & Teknoloji Tutkunu",
+                btn_projects: "Projelerimi Gör",
+                btn_cv: "CV İndir",
+                
+                about_desc: "Bilgisayar mühendisliği son sınıf öğrencisiyim. Web teknolojileri, mobil uygulama geliştirme ve yapay zeka konularında kendimi geliştiriyorum. Öğrenmeye ve teknoloji ile sorunlara çözüm üretmeye tutkulu biriyim.",
+                skills_title: "Yetenekler",
+                
+                title_supported: "Desteklenen Projeler",
+                title_medium: "Medium Yazılarım",
+                badge_tubitak: "TÜBİTAK Destekli",
+                badge_udham: "UDHAM Destekli",
+                btn_read: "Yazıyı Oku",
+
+                // Normal Projeler
+                proj1_title: "🔒 Güvenlik Sınavı Sistemi",
+                proj1_desc: "Güvenlik personeli için tasarlanmış görsel tabanlı bir sınav sistemidir. Kullanıcılar, bagaj ve eşya görsellerini inceleyerek tehdit unsurlarını tanımlar.",
+                proj3_title: "🍽 Tarif Vakti - Yemek Tarifleri",
+                proj3_desc: "Kullanıcıların yemek tariflerine bakabildiği, blog yazılarını okuyabildiği ASP.NET Web Forms tabanlı bir web uygulamasıdır.",
+                proj4_title: "🚌 BİLETALL - Otomasyon Sistemi",
+                proj4_desc: "C# Windows Forms ile geliştirilmiş otobüs bileti satış ve yönetim sistemidir. Müşteri yönetimi ve bilet satış işlemlerini kapsar.",
+                proj5_title: "🎤 Türkçe Telaffuz Eğitimi Uygulaması",
+                proj5_desc: "Doğal dil işleme (NLP) teknolojileri kullanılarak geliştirilen mobil uygulama. Kullanıcıların konuşma hatalarını tespit ederek anlık görsel geri bildirim sunar.",
+                proj6_title: "🏍️ Moto İncele - Web Platformu",
+                proj6_desc: "Motosiklet tutkunları için geliştirilmiş, model incelemeleri ve teknik özelliklerin yer aldığı web platformudur.",
+                
+                // Desteklenen Projeler (Özel ID'ler verildi)
+                supp_proj1_title: "🎓 Tek Durak Burs – Akıllı Eşleştirme",
+                supp_proj1_desc: "Öğrencilerin kriterlerine en uygun bursları kolayca bulmasını sağlayan akıllı eşleştirme sistemi. Mobil uygulama üzerinden burs ilanlarını filtreleyip yalnızca uygun adaylara gösterir.",
+                supp_proj2_title: "📡 Afet Sonrası İletişim Sistemi",
+                supp_proj2_desc: "Afet durumlarında iletişim altyapısı çöktüğünde dahi çalışabilen, mesh ağ teknolojisini kullanarak cihazlar arasında internet gerektirmeden iletişim sağlayan sistem.",
+
+                // Medium Yazıları (Kubernetes)
+                blog1_title: "Kubernetes ile Proje Geliştirme",
+                blog1_desc: "Kubernetes temellerine giriş: Yerel geliştirme ortamının kurulumu (Minikube, kubectl) ve Node.js uygulamasının Docker ile konteynerize edilmesi.",
+                blog2_title: "Kubernetes Yolculuğu: Node.js",
+                blog2_desc: "Dockerize edilmiş Node.js uygulamasının Kubernetes mimarisine entegrasyonu, Deployment ve Service yapılandırmaları ile yönetilmesi.",
+
+                view_github: "GitHub'da İncele",
+                contact_title: "İletişime Geç",
+                contact_desc: "Projeleriniz veya sorularınız için bana ulaşabilirsiniz.",
+                send_email: "E-posta Gönder",
+                rights: "Tüm hakları saklıdır."
+            },
+            en: {
+                nav_home: "Home",
+                nav_about: "About",
+                nav_projects_main: "Projects",
+                nav_all_projects: "All Projects",
+                nav_supported: "Achievements",
+                nav_medium: "Medium",
+                nav_contact: "Contact",
+                
+                hero_title: "Software Developer & Tech Enthusiast",
+                btn_projects: "View Projects",
+                btn_cv: "Download CV",
+                
+                about_desc: "I am a senior Computer Engineering student. I am improving myself in web technologies, mobile application development, and artificial intelligence. I am passionate about learning and creating solutions with technology.",
+                skills_title: "Skills",
+                
+                title_supported: "Supported Projects",
+                title_medium: "Medium Articles",
+                badge_tubitak: "TUBITAK Funded",
+                badge_udham: "UDHAM Funded",
+                btn_read: "Read Article",
+
+                // Normal Projects
+                proj1_title: "🔒 Security Exam System",
+                proj1_desc: "A visual-based exam system designed for security personnel. Users identify threat items by examining luggage and item visuals.",
+                proj3_title: "🍽 Tarif Vakti - Recipe Platform",
+                proj3_desc: "An ASP.NET Web Forms based web application where users can browse recipes, read blog posts, and view galleries.",
+                proj4_title: "🚌 BILETALL - Automation System",
+                proj4_desc: "A bus ticket sales and management system developed with C# Windows Forms. It covers customer management and ticket sales operations.",
+                proj5_title: "🎤 TR Pronunciation Training App",
+                proj5_desc: "A mobile app developed using NLP technologies. It detects users' speech errors and provides real-time visual feedback.",
+                proj6_title: "🏍️ Moto Review - Web Platform",
+                proj6_desc: "A web platform developed for motorcycle enthusiasts, featuring model reviews and technical specifications.",
+
+                // Supported Projects
+                supp_proj1_title: "🎓 Tek Durak Burs – Smart Matching",
+                supp_proj1_desc: "A smart matching system that allows students to easily find the most suitable scholarships. It filters scholarship listings via mobile app and shows them only to suitable candidates.",
+                supp_proj2_title: "📡 Post-Disaster Communication System",
+                supp_proj2_desc: "A system that works even when communication infrastructure collapses during disasters, using mesh network technology to provide communication between devices without internet.",
+
+                // Medium Articles (Kubernetes)
+                blog1_title: "Project Development with Kubernetes",
+                blog1_desc: "Introduction to Kubernetes basics: Setting up local development environment (Minikube, kubectl) and containerizing a Node.js application with Docker.",
+                blog2_title: "Kubernetes Journey: Node.js",
+                blog2_desc: "Integration of Dockerized Node.js application into Kubernetes architecture, managing with Deployment and Service configurations.",
+
+                view_github: "View on GitHub",
+                contact_title: "Get in Touch",
+                contact_desc: "You can contact me for your projects or questions.",
+                send_email: "Send Email",
+                rights: "All rights reserved."
+            }
+        };
+
+        /* --- DİL DEĞİŞTİRME FONKSİYONU --- */
+        const langBtn = document.getElementById('lang-btn');
+        const currentLangSpan = document.querySelector('.current-lang');
+        let currentLang = 'tr';
+
+        if (langBtn) {
+            langBtn.addEventListener('click', () => {
+                currentLang = currentLang === 'tr' ? 'en' : 'tr';
+                currentLangSpan.textContent = currentLang.toUpperCase();
+                
+                document.querySelectorAll('[data-lang]').forEach(element => {
+                    const key = element.getAttribute('data-lang');
+                    if (translations[currentLang][key]) {
+                        // Opaklık efekti ile yumuşak geçiş
+                        element.style.opacity = 0;
+                        setTimeout(() => {
+                            element.textContent = translations[currentLang][key];
+                            element.style.opacity = 1;
+                        }, 200);
+                    }
+                });
+            });
+            
+            // Sayfa yüklenince animasyon stilini ekle
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('[data-lang]').forEach(el => {
+                    el.style.transition = 'opacity 0.3s ease';
+                });
+            });
+        }
+
+        /* --- MOBİL MENÜ KODLARI --- */
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            if (!link.classList.contains('dropbtn')) {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    const icon = menuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            }
+        });
+    </script>
 </body>
-
 </html>
-
-
