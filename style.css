@@ -476,3 +476,8 @@ footer p { color: #b0b0b0; }
     .about-text { text-align: center; }
     .skills { justify-content: center; }
 }
+.tam-sigdir {
+    object-fit: contain !important; /* Resmi kesme, kutunun içine sığdır */
+    background-color: #ffffff;      /* Kenarlarda boşluk kalırsa arkası beyaz olsun */
+    padding: 5px;                   /* Resim kutuya yapışmasın, biraz pay olsun */
+}
