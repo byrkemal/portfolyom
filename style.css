@@ -1,4 +1,4 @@
-/* style.css - TAM VE GÜNCEL SÜRÜM */
+/* style.css - GÜNCEL VE EĞİTİM BÖLÜMÜ EKLENMİŞ SÜRÜM */
 
 * {
     margin: 0;
@@ -379,6 +379,50 @@ body {
 }
 
 .fa-medium { color: #fff; }
+
+/* --- EĞİTİM VE SERTİFİKALAR BÖLÜMÜ (YENİ EKLENDİ) --- */
+.education-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.edu-card {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.edu-card h3 { color: #3498db; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.edu-card p { color: #ccc; margin-bottom: 5px; }
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cert-item {
+    background: rgba(255,255,255,0.05);
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.cert-item:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #3498db;
+}
+
+.cert-item i { color: #2ecc71; font-size: 1.2rem; }
+.cert-item span { color: #e0e0e0; font-size: 0.95rem; }
+/* ------------------------------------------------------- */
 
 /* Footer */
 footer {
