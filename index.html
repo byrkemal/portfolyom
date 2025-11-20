@@ -38,13 +38,14 @@
             </li>
 
             <li><a href="#medium" data-lang="nav_medium">Medium</a></li>
+            <li><a href="#education" data-lang="nav_edu">Eğitim</a></li>
             <li><a href="#contact" data-lang="nav_contact">İletişim</a></li>
         </ul>
     </nav>
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1><span data-lang="hero_greeting"></span> <span>Kemal Bayır</span></h1>
+            <h1><span data-lang="hero_greeting">Merhaba, Ben</span> <span>Kemal Bayır</span></h1>
             <p data-lang="hero_title">Yazılım Geliştirici & Teknoloji Tutkunu</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary" data-lang="btn_projects">Projelerimi Gör</a>
@@ -68,6 +69,8 @@
                     <span>Flutter</span>
                     <span>Django</span>
                     <span>Git</span>
+                    <span>SQL</span>
+                    <span>Scrum</span>
                 </div>
             </div>
         </div>
@@ -175,6 +178,45 @@
         </div>
     </section>
 
+    <section id="education" class="section">
+        <h2 data-lang="nav_edu">Eğitim & Sertifikalar</h2>
+        <div class="education-container">
+            
+            <div class="edu-card">
+                <h3><i class="fas fa-university"></i> <span data-lang="edu_uni">Kastamonu Üniversitesi</span></h3>
+                <p data-lang="edu_dept">Bilgisayar Mühendisliği - 4. Sınıf Öğrencisi</p>
+                <p>2021 - 2025 (Beklenen Mezuniyet) | GPA: 3.XX</p>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Programming for Everybody (Python)</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-database"></i>
+                    <span>Intro to SQL</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-tasks"></i>
+                    <span>Scrum Fundamentals</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Flutter Development</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-code"></i>
+                    <span>Algoritma ve Veri Yapıları</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-brain"></i>
+                    <span>Yapay Zeka Temelleri</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer id="contact">
         <h2 data-lang="contact_title">İletişime Geç</h2>
         <p data-lang="contact_desc">Projeleriniz veya sorularınız için bana ulaşabilirsiniz.</p>
@@ -195,14 +237,16 @@
                 nav_projects_main: "Projeler",
                 nav_all_projects: "Tüm Projeler",
                 nav_supported: "Başarılar",
+                nav_edu: "Eğitim",
                 nav_medium: "Medium",
                 nav_contact: "İletişim",
                 
+                hero_greeting: "Merhaba, Ben",
                 hero_title: "Yazılım Geliştirici & Teknoloji Tutkunu",
                 btn_projects: "Projelerimi Gör",
                 btn_cv: "CV İndir",
                 
-                about_desc: "Bilgisayar mühendisliği son sınıf öğrencisiyim. Web teknolojileri, mobil uygulama geliştirme ve yapay zeka konularında kendimi geliştiriyorum. Öğrenmeye ve teknoloji ile sorunlara çözüm üretmeye tutkulu biriyim.",
+                about_desc: "Kastamonu Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Web teknolojileri, mobil uygulama geliştirme ve yapay zeka konularında kendimi geliştiriyorum. Öğrenmeye ve teknoloji ile sorunlara çözüm üretmeye tutkulu biriyim.",
                 skills_title: "Yetenekler",
                 
                 title_supported: "Desteklenen Projeler",
@@ -210,6 +254,10 @@
                 badge_tubitak: "TÜBİTAK Destekli",
                 badge_udham: "UDHAM Destekli",
                 btn_read: "Yazıyı Oku",
+
+                // Eğitim
+                edu_uni: "Kastamonu Üniversitesi",
+                edu_dept: "Bilgisayar Mühendisliği - 4. Sınıf Öğrencisi",
 
                 // Normal Projeler
                 proj1_title: "🔒 Güvenlik Sınavı Sistemi",
@@ -223,13 +271,13 @@
                 proj6_title: "🏍️ Moto İncele - Web Platformu",
                 proj6_desc: "Motosiklet tutkunları için geliştirilmiş, model incelemeleri ve teknik özelliklerin yer aldığı web platformudur.",
                 
-                // Desteklenen Projeler (Özel ID'ler verildi)
+                // Desteklenen Projeler
                 supp_proj1_title: "🎓 Tek Durak Burs – Akıllı Eşleştirme",
                 supp_proj1_desc: "Öğrencilerin kriterlerine en uygun bursları kolayca bulmasını sağlayan akıllı eşleştirme sistemi. Mobil uygulama üzerinden burs ilanlarını filtreleyip yalnızca uygun adaylara gösterir.",
                 supp_proj2_title: "📡 Afet Sonrası İletişim Sistemi",
                 supp_proj2_desc: "Afet durumlarında iletişim altyapısı çöktüğünde dahi çalışabilen, mesh ağ teknolojisini kullanarak cihazlar arasında internet gerektirmeden iletişim sağlayan sistem.",
 
-                // Medium Yazıları (Kubernetes)
+                // Medium Yazıları
                 blog1_title: "Kubernetes ile Proje Geliştirme",
                 blog1_desc: "Kubernetes temellerine giriş: Yerel geliştirme ortamının kurulumu (Minikube, kubectl) ve Node.js uygulamasının Docker ile konteynerize edilmesi.",
                 blog2_title: "Kubernetes Yolculuğu: Node.js",
@@ -247,14 +295,16 @@
                 nav_projects_main: "Projects",
                 nav_all_projects: "All Projects",
                 nav_supported: "Achievements",
+                nav_edu: "Education",
                 nav_medium: "Medium",
                 nav_contact: "Contact",
                 
+                hero_greeting: "Hello, I'm",
                 hero_title: "Software Developer & Tech Enthusiast",
                 btn_projects: "View Projects",
                 btn_cv: "Download CV",
                 
-                about_desc: "I am a senior Computer Engineering student. I am improving myself in web technologies, mobile application development, and artificial intelligence. I am passionate about learning and creating solutions with technology.",
+                about_desc: "I am a senior Computer Engineering student at Kastamonu University. I am improving myself in web technologies, mobile application development, and artificial intelligence. I am passionate about learning and creating solutions with technology.",
                 skills_title: "Skills",
                 
                 title_supported: "Supported Projects",
@@ -262,6 +312,10 @@
                 badge_tubitak: "TUBITAK Funded",
                 badge_udham: "UDHAM Funded",
                 btn_read: "Read Article",
+
+                // Education
+                edu_uni: "Kastamonu University",
+                edu_dept: "Computer Engineering - Senior Student",
 
                 // Normal Projects
                 proj1_title: "🔒 Security Exam System",
@@ -281,7 +335,7 @@
                 supp_proj2_title: "📡 Post-Disaster Communication System",
                 supp_proj2_desc: "A system that works even when communication infrastructure collapses during disasters, using mesh network technology to provide communication between devices without internet.",
 
-                // Medium Articles (Kubernetes)
+                // Medium Articles
                 blog1_title: "Project Development with Kubernetes",
                 blog1_desc: "Introduction to Kubernetes basics: Setting up local development environment (Minikube, kubectl) and containerizing a Node.js application with Docker.",
                 blog2_title: "Kubernetes Journey: Node.js",
@@ -355,7 +409,3 @@
     </script>
 </body>
 </html>
-
-
-
-
