@@ -25,8 +25,7 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="#home" data-lang="nav_home">Ana Sayfa</a></li>
             <li><a href="#about" data-lang="nav_about">Hakkımda</a></li>
-            
-            <li class="dropdown">
+            <li><a href="#experience" data-lang="nav_experience">Deneyim</a></li> <li class="dropdown">
                 <a href="#projects" class="dropbtn">
                     <span data-lang="nav_projects_main">Projeler</span> 
                     <i class="fas fa-chevron-down"></i>
@@ -38,7 +37,6 @@
             </li>
 
             <li><a href="#medium" data-lang="nav_medium">Medium</a></li>
-            <li><a href="#education" data-lang="nav_edu">Eğitim</a></li>
             <li><a href="#contact" data-lang="nav_contact">İletişim</a></li>
         </ul>
     </nav>
@@ -69,12 +67,62 @@
                     <span>Flutter</span>
                     <span>Django</span>
                     <span>Git</span>
-                    <span>SQL</span>
-                    <span>Scrum</span>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="experience" class="section bg-light">
+    <h2 data-lang="exp_title">Deneyimlerim</h2>
+    <div class="experience-container">
+        
+        <div class="experience-card">
+            <div class="exp-header-pro">
+                <div class="company-logo-wrapper">
+                    <img src="images/onftech-logo.png" alt="Onftech Logosu" class="company-logo-img">
+                </div>
+                <div class="exp-titles">
+                    <h3 data-lang="exp1_role">Onftech Yazılım Şirketi Stajyeri</h3>
+                    <h4 class="company-name">Onftech - DevOps & Güvenlik Analizleri</h4>
+                </div>
+                <span class="exp-date" data-lang="exp1_date">Ağustos - Eylül / 2024</span>
+            </div>
+
+            <div class="exp-body">
+                <p data-lang="exp1_desc">Staj sürecimde Docker Desktop ile Dependency-Track kurulumunu gerçekleştirerek konteyner tabanlı güvenlik analizleri yapmayı öğrendim. Ayrıca, Rule Engine (Kural Motoru) sistemlerinin nasıl çalıştığını araştırarak otomatik karar alma süreçleri ve güvenlik politikaları üzerine bilgiler edindim.</p>
+                <div class="tech-tags">
+                    <span>Docker</span>
+                    <span>ASP.NET</span>
+                    <span>Dependency-Track</span>
+                    <span>Rule Engine</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="exp-header-pro">
+                <div class="company-logo-wrapper">
+                    <img src="images/dpu-logo.png" alt="DPÜ Logosu" class="company-logo-img">
+                </div>
+                <div class="exp-titles">
+                    <h3 data-lang="exp2_role">Gönüllü Stajyer</h3>
+                    <h4 class="company-name">Kütahya Dumlupınar Üniversitesi - Bilgi İşlem</h4>
+                </div>
+                <span class="exp-date" data-lang="exp2_date">Ağustos - 2025</span>
+            </div>
+
+            <div class="exp-body">
+                <p data-lang="exp2_desc">Donanım alanında uygulamalı gözlemler yaparak deneyim kazandım. Bilgisayarların bakım ve onarım süreçlerine dahil olarak kondansatör değişimi, format atma, donanım arızalarının tespiti ve giderilmesi gibi işlemlerin nasıl gerçekleştirildiğini yerinde gözlemledim.</p>
+                <div class="tech-tags">
+                    <span>Teknik Destek</span>
+                    <span>Donanım Bakım</span>
+                    <span>Arıza Tespit</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <section id="projects" class="section">
         <h2 data-lang="nav_projects_main">Projeler</h2>
@@ -134,7 +182,7 @@
             
             <div class="project-card">
                 <div class="badge"><i class="fas fa-award"></i> <span data-lang="badge_tubitak">TÜBİTAK Destekli</span></div>
-                <img src="images/tübitakkk.jpg" alt="Tek Durak Burs" class="card-img tam-sigdir">
+                <img src="images/tübitak.jpg" alt="Tek Durak Burs" class="card-img tam-sigdir">
                 <div class="card-info">
                     <h3 data-lang="supp_proj1_title">🎓 Tek Durak Burs – Akıllı Burs Eşleştirme</h3>
                     <p data-lang="supp_proj1_desc">Öğrencilerin kriterlerine en uygun bursları kolayca bulmasını sağlayan akıllı eşleştirme sistemi. Mobil uygulama üzerinden burs ilanlarını filtreleyip yalnızca uygun adaylara gösterir.</p>
@@ -143,9 +191,9 @@
 
             <div class="project-card">
                 <div class="badge"><i class="fas fa-award"></i> <span data-lang="badge_udham">UDHAM Destekli</span></div>
-                <img src="images/depremlink.png" alt="Afet İletişim" class="card-img">
+                <img src="images/depremlink.png" alt="Afet İletişim" class="card-img tam-sigdir">
                 <div class="card-info">
-                     <h3 data-lang="supp_proj2_title">📡 Afet Sonrası İletişim ve Koordinasyon</h3>
+                      <h3 data-lang="supp_proj2_title">📡 Afet Sonrası İletişim ve Koordinasyon</h3>
                     <p data-lang="supp_proj2_desc">Afet durumlarında iletişim altyapısı çöktüğünde dahi çalışabilen, mesh ağ teknolojisini kullanarak cihazlar arasında internet gerektirmeden iletişim sağlayan sistem.</p>
                 </div>
             </div>
@@ -178,31 +226,6 @@
         </div>
     </section>
 
-    <section id="education" class="section">
-        <h2 data-lang="nav_edu">Eğitim & Sertifikalar</h2>
-        <div class="education-container">
-            
-            <div class="edu-card">
-                <h3><i class="fas fa-university"></i> <span data-lang="edu_uni">Kastamonu Üniversitesi</span></h3>
-                <p data-lang="edu_dept">Bilgisayar Mühendisliği - 4. Sınıf Öğrencisi</p>
-                <p>2021 - 2025 (Beklenen Mezuniyet) </p>
-            </div>
-
-            <div class="cert-grid">
-                <div class="cert-item">
-                    <i class="fas fa-certificate"></i>
-                    <span>SİBER VATAN PROGRAMI | 2024</span>
-                    <span>T.C. Batı Karadeniz Kalkınma Ajansı</span>
-                </div>
-                <div class="cert-item">
-                    <i class="fas fa-database"></i>
-                    <span>VERİ İLETİMİ VE BİLGİSAYAR AĞLARI-2024</span>
-                    <span>Cisco Networking Academy</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer id="contact">
         <h2 data-lang="contact_title">İletişime Geç</h2>
         <p data-lang="contact_desc">Projeleriniz veya sorularınız için bana ulaşabilirsiniz.</p>
@@ -220,29 +243,35 @@
             tr: {
                 nav_home: "Ana Sayfa",
                 nav_about: "Hakkımda",
+                nav_experience: "Deneyim", // EKLENDİ
                 nav_projects_main: "Projeler",
                 nav_all_projects: "Tüm Projeler",
                 nav_supported: "Başarılar",
-                nav_edu: "Eğitim",
                 nav_medium: "Medium",
                 nav_contact: "İletişim",
                 
+                hero_greeting: "Merhaba, Ben", // EKLENDİ
                 hero_title: "Yazılım Geliştirici & Teknoloji Tutkunu",
                 btn_projects: "Projelerimi Gör",
                 btn_cv: "CV İndir",
                 
-                about_desc: "Kastamonu Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Web teknolojileri, mobil uygulama geliştirme ve yapay zeka konularında kendimi geliştiriyorum. Öğrenmeye ve teknoloji ile sorunlara çözüm üretmeye tutkulu biriyim.",
+                about_desc: "Bilgisayar mühendisliği son sınıf öğrencisiyim. Web teknolojileri, mobil uygulama geliştirme ve yapay zeka konularında kendimi geliştiriyorum. Öğrenmeye ve teknoloji ile sorunlara çözüm üretmeye tutkulu biriyim.",
                 skills_title: "Yetenekler",
                 
+                // DENEYİM KISMI - TR
+                exp_title: "Deneyimlerim",
+                exp1_role: "Onftech Yazılım Şirketi Stajyeri",
+                exp1_date: "Ağustos - Eylül / 2024",
+                exp1_desc: "Staj sürecimde Docker Desktop ile Dependency-Track kurulumunu gerçekleştirerek konteyner tabanlı güvenlik analizleri yapmayı öğrendim. Ayrıca, Rule Engine (Kural Motoru) sistemlerinin nasıl çalıştığını araştırarak otomatik karar alma süreçleri ve güvenlik politikaları üzerine bilgiler edindim.",
+                exp2_role: "Gönüllü Stajyer",
+                exp2_date: "Ağustos - 2025",
+                exp2_desc: "Donanım alanında uygulamalı gözlemler yaparak deneyim kazandım. Bilgisayarların bakım ve onarım süreçlerine dahil olarak kondansatör değişimi, format atma, donanım arızalarının tespiti ve giderilmesi gibi işlemlerin nasıl gerçekleştirildiğini yerinde gözlemledim.",
+
                 title_supported: "Desteklenen Projeler",
                 title_medium: "Medium Yazılarım",
                 badge_tubitak: "TÜBİTAK Destekli",
                 badge_udham: "UDHAM Destekli",
                 btn_read: "Yazıyı Oku",
-
-                // Eğitim
-                edu_uni: "Kastamonu Üniversitesi",
-                edu_dept: "Bilgisayar Mühendisliği - 4. Sınıf Öğrencisi",
 
                 // Normal Projeler
                 proj1_title: "🔒 Güvenlik Sınavı Sistemi",
@@ -256,13 +285,13 @@
                 proj6_title: "🏍️ Moto İncele - Web Platformu",
                 proj6_desc: "Motosiklet tutkunları için geliştirilmiş, model incelemeleri ve teknik özelliklerin yer aldığı web platformudur.",
                 
-                // Desteklenen Projeler
+                // Desteklenen Projeler (Özel ID'ler verildi)
                 supp_proj1_title: "🎓 Tek Durak Burs – Akıllı Eşleştirme",
                 supp_proj1_desc: "Öğrencilerin kriterlerine en uygun bursları kolayca bulmasını sağlayan akıllı eşleştirme sistemi. Mobil uygulama üzerinden burs ilanlarını filtreleyip yalnızca uygun adaylara gösterir.",
                 supp_proj2_title: "📡 Afet Sonrası İletişim Sistemi",
                 supp_proj2_desc: "Afet durumlarında iletişim altyapısı çöktüğünde dahi çalışabilen, mesh ağ teknolojisini kullanarak cihazlar arasında internet gerektirmeden iletişim sağlayan sistem.",
 
-                // Medium Yazıları
+                // Medium Yazıları (Kubernetes)
                 blog1_title: "Kubernetes ile Proje Geliştirme",
                 blog1_desc: "Kubernetes temellerine giriş: Yerel geliştirme ortamının kurulumu (Minikube, kubectl) ve Node.js uygulamasının Docker ile konteynerize edilmesi.",
                 blog2_title: "Kubernetes Yolculuğu: Node.js",
@@ -277,29 +306,35 @@
             en: {
                 nav_home: "Home",
                 nav_about: "About",
+                nav_experience: "Experience", // EKLENDİ
                 nav_projects_main: "Projects",
                 nav_all_projects: "All Projects",
                 nav_supported: "Achievements",
-                nav_edu: "Education",
                 nav_medium: "Medium",
                 nav_contact: "Contact",
                 
+                hero_greeting: "Hello, I am",
                 hero_title: "Software Developer & Tech Enthusiast",
                 btn_projects: "View Projects",
                 btn_cv: "Download CV",
                 
-                about_desc: "I am a senior Computer Engineering student at Kastamonu University. I am improving myself in web technologies, mobile application development, and artificial intelligence. I am passionate about learning and creating solutions with technology.",
+                about_desc: "I am a senior Computer Engineering student. I am improving myself in web technologies, mobile application development, and artificial intelligence. I am passionate about learning and creating solutions with technology.",
                 skills_title: "Skills",
                 
+                // DENEYİM KISMI - EN
+                exp_title: "Experience",
+                exp1_role: "Software Intern at Onftech",
+                exp1_date: "August - September / 2024",
+                exp1_desc: "During my internship, I learned how to perform container-based security analyses by installing Dependency-Track with Docker Desktop. I also researched Rule Engine systems and gained knowledge on automated decision-making processes and security policies.",
+                exp2_role: "Voluntary Intern",
+                exp2_date: "August - 2025",
+                exp2_desc: "I gained experience by making applied observations in hardware. I participated in computer maintenance and repair processes, observing on-site operations such as capacitor replacement, formatting, and hardware troubleshooting.",
+
                 title_supported: "Supported Projects",
                 title_medium: "Medium Articles",
                 badge_tubitak: "TUBITAK Funded",
                 badge_udham: "UDHAM Funded",
                 btn_read: "Read Article",
-
-                // Education
-                edu_uni: "Kastamonu University",
-                edu_dept: "Computer Engineering - Senior Student",
 
                 // Normal Projects
                 proj1_title: "🔒 Security Exam System",
@@ -319,7 +354,7 @@
                 supp_proj2_title: "📡 Post-Disaster Communication System",
                 supp_proj2_desc: "A system that works even when communication infrastructure collapses during disasters, using mesh network technology to provide communication between devices without internet.",
 
-                // Medium Articles
+                // Medium Articles (Kubernetes)
                 blog1_title: "Project Development with Kubernetes",
                 blog1_desc: "Introduction to Kubernetes basics: Setting up local development environment (Minikube, kubectl) and containerizing a Node.js application with Docker.",
                 blog2_title: "Kubernetes Journey: Node.js",
@@ -393,6 +428,3 @@
     </script>
 </body>
 </html>
-
-
-
