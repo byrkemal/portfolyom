@@ -1,4 +1,4 @@
-/* style.css - GÜNCEL VE EĞİTİM BÖLÜMÜ EKLENMİŞ SÜRÜM */
+/* style.css - TAM VE GÜNCEL SÜRÜM */
 
 * {
     margin: 0;
@@ -380,50 +380,6 @@ body {
 
 .fa-medium { color: #fff; }
 
-/* --- EĞİTİM VE SERTİFİKALAR BÖLÜMÜ (YENİ EKLENDİ) --- */
-.education-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    color: #fff;
-}
-
-.edu-card {
-    background: rgba(52, 152, 219, 0.1);
-    border-left: 4px solid #3498db;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-.edu-card h3 { color: #3498db; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
-.edu-card p { color: #ccc; margin-bottom: 5px; }
-
-.cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.cert-item {
-    background: rgba(255,255,255,0.05);
-    padding: 15px 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: 0.3s;
-}
-
-.cert-item:hover {
-    background: rgba(255,255,255,0.1);
-    border-color: #3498db;
-}
-
-.cert-item i { color: #2ecc71; font-size: 1.2rem; }
-.cert-item span { color: #e0e0e0; font-size: 0.95rem; }
-/* ------------------------------------------------------- */
-
 /* Footer */
 footer {
     background: rgba(10, 10, 10, 0.9);
@@ -520,8 +476,136 @@ footer p { color: #b0b0b0; }
     .about-text { text-align: center; }
     .skills { justify-content: center; }
 }
-.tam-sigdir {
-    object-fit: contain !important; /* Resmi kesme, kutunun içine sığdır */
-    background-color: #ffffff;      /* Kenarlarda boşluk kalırsa arkası beyaz olsun */
-    padding: 5px;                   /* Resim kutuya yapışmasın, biraz pay olsun */
+
+/* --- PROFESYONEL DENEYİM BÖLÜMÜ STİLLERİ --- */
+.experience-container {
+    max-width: 850px; /* Biraz daha genişlettik */
+    margin: 0 auto;
+    text-align: left;
+}
+
+.experience-card {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px; /* Köşeleri daha yumuşak yaptık */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Gölgeyi daha hafif ve modern yaptık */
+    border-left: 4px solid #3498db; /* Sol şerit biraz inceldi */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px); /* Yukarı doğru hafif hareket */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Gölge belirginleşir */
+}
+
+/* Üst Kısım (Logo, Başlıklar, Tarih) */
+.exp-header-pro {
+    display: flex;
+    align-items: flex-start; /* Öğeleri üstten hizala */
+    gap: 15px; /* Öğeler arası boşluk */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Mobilde sığmazsa alta geçsin */
+}
+
+/* Logo Çerçevesi */
+.company-logo-wrapper {
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    background: #fff; /* Arka plan beyaz */
+    border-radius: 12px; /* Hafif yuvarlak köşeler */
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Logoya hafif derinlik */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f0f0f0;
+}
+
+/* Logonun Kendisi */
+.company-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Başlıklar Alanı */
+.exp-titles {
+    flex-grow: 1; /* Kalan boşluğu doldur */
+}
+
+.exp-titles h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+.company-name {
+    color: #3498db;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Tarih Alanı */
+.exp-date {
+    background: #f0f2f5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #666;
+    white-space: nowrap; /* Tarihin alt satıra geçmesini engelle */
+    font-weight: 500;
+}
+
+/* Alt Kısım (Açıklama ve Etiketler) */
+.exp-body p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Teknoloji Etiketleri */
+.tech-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tech-tags span {
+    background: transparent;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    border-radius: 20px; /* Daha yuvarlak etiketler */
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.tech-tags span:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+/* --- MOBİL UYUMLULUK (Responsive) --- */
+@media (max-width: 768px) {
+    .exp-header-pro {
+        flex-wrap: wrap; /* Mobilde sıkışırsa sar */
+    }
+    
+    .company-logo-wrapper {
+        width: 50px; /* Mobilde logo biraz daha küçük */
+        height: 50px;
+    }
+
+    .exp-date {
+        /* Mobilde tarih başlıkların altına geçsin ve sola yaslansın */
+        width: 100%;
+        margin-top: 10px;
+        display: inline-block;
+        text-align: center;
+    }
 }
